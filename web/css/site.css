@@ -16,7 +16,7 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #134f5c;
     border-top: 1px solid #ddd;
     padding-top: 20px;
 }
@@ -88,4 +88,54 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+.navbar-inverse
+{
+    background-color: #134f5c;
+}
+.navbar-inverse a
+{
+    color: #ffffff !important;
+}
+.navbar-inverse a:hover
+{
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+.center
+{
+    text-align: center;
+}
+.right
+{
+    text-align: right;
+}
+.left
+{
+    text-align: left;
+}
+.bluebox
+{
+    background-color: #cee1f2;
+}
+.button
+{
+    margin: 10px auto;
+}
+.button a
+{
+    background-color: #fdfdfe;
+    padding: 5px 25px;
+    border: 1px solid #134f5c;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 0 7px 1px rgba(0,0,0,0.75);
+}
+.button a:hover
+{
+    -webkit-box-shadow: inset 0 0 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 7px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 7px 1px rgba(0,0,0,0.75);
 }
