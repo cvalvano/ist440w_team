@@ -32,7 +32,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => 'Pharmaceutical Portal',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => Yii::$app->homeUrl.'?r=site/portal',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],

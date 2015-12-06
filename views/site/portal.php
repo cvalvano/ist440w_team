@@ -9,58 +9,32 @@ $this->title = 'Pharmaceuticals Portal';
         <div class="col span_6_of_12">
             <h2>Drug Information</h2>
             <div>
-                <h3><a href="javascript:">Your Prescriptions</a></h3>
+                <h3><a href="index.php?r=site/prescriptions">Your Prescriptions</a></h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, augue mollis pulvinar venenatis,
-                    diam odio imperdiet lorem, ac vestibulum leo dui ut erat. Integer semper, purus eu aliquam mollis, leo
-                    dolor vehicula lorem, vel fermentum sem libero in velit. Donec vitae augue facilisis, mattis sem id,
-                    tristique eros. Etiam iaculis malesuada augue, ac tristique sem placerat tempor. Vestibulum interdum
-                    commodo risus, in vulputate sem condimentum eu. Mauris quis lobortis tellus. Phasellus vulputate maximus
-                    urna vitae laoreet. Fusce justo eros, venenatis eu gravida eu, ullamcorper scelerisque tortor. Vivamus
-                    libero augue, pretium a quam nec, euismod facilisis sem. Vestibulum euismod condimentum est, et blandit
-                    arcu auctor&nbsp;ut.
+                    Use this tool to track your prescription medication and set reminders for yourself.
                 </p>
             </div>
             <div>
-                <h3><a href="javascript:">Drug Lookup</a></h3>
+                <h3><a href="index.php?r=site/drug_lookup">Drug Lookup</a></h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, augue mollis pulvinar venenatis,
-                    diam odio imperdiet lorem, ac vestibulum leo dui ut erat. Integer semper, purus eu aliquam mollis, leo
-                    dolor vehicula lorem, vel fermentum sem libero in velit. Donec vitae augue facilisis, mattis sem id,
-                    tristique eros. Etiam iaculis malesuada augue, ac tristique sem placerat tempor. Vestibulum interdum
-                    commodo risus, in vulputate sem condimentum eu. Mauris quis lobortis tellus. Phasellus vulputate maximus
-                    urna vitae laoreet. Fusce justo eros, venenatis eu gravida eu, ullamcorper scelerisque tortor. Vivamus
-                    libero augue, pretium a quam nec, euismod facilisis sem. Vestibulum euismod condimentum est, et blandit
-                    arcu auctor&nbsp;ut.
+                    Use this tool to search pharmaceutical drugs.  You can view information about the drugs, key interactions
+                    with other drugs and a history of the drugs.  It is important that you always follow the guidance of
+                    your doctor when taking different over the counter medications alongside prescribed&nbsp;drugs.
                 </p>
             </div>
         </div>
         <div class="col span_6_of_12">
             <h2>Clinical Trial Information</h2>
             <div>
-                <h3><a href="javascript:">About Clinical Trials</a></h3>
+                <h3><a href="index.php?r=site/about_trials">About Clinical Trials</a></h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, augue mollis pulvinar venenatis,
-                    diam odio imperdiet lorem, ac vestibulum leo dui ut erat. Integer semper, purus eu aliquam mollis, leo
-                    dolor vehicula lorem, vel fermentum sem libero in velit. Donec vitae augue facilisis, mattis sem id,
-                    tristique eros. Etiam iaculis malesuada augue, ac tristique sem placerat tempor. Vestibulum interdum
-                    commodo risus, in vulputate sem condimentum eu. Mauris quis lobortis tellus. Phasellus vulputate maximus
-                    urna vitae laoreet. Fusce justo eros, venenatis eu gravida eu, ullamcorper scelerisque tortor. Vivamus
-                    libero augue, pretium a quam nec, euismod facilisis sem. Vestibulum euismod condimentum est, et blandit
-                    arcu auctor&nbsp;ut.
+                    Use this tool to learn more about Clinical&nbsp;Trials.
                 </p>
             </div>
             <div>
-                <h3><a href="javascript:">Trial Lookup</a></h3>
+                <h3><a href="index.php?r=site/trial_lookup">Trial Lookup</a></h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, augue mollis pulvinar venenatis,
-                    diam odio imperdiet lorem, ac vestibulum leo dui ut erat. Integer semper, purus eu aliquam mollis, leo
-                    dolor vehicula lorem, vel fermentum sem libero in velit. Donec vitae augue facilisis, mattis sem id,
-                    tristique eros. Etiam iaculis malesuada augue, ac tristique sem placerat tempor. Vestibulum interdum
-                    commodo risus, in vulputate sem condimentum eu. Mauris quis lobortis tellus. Phasellus vulputate maximus
-                    urna vitae laoreet. Fusce justo eros, venenatis eu gravida eu, ullamcorper scelerisque tortor. Vivamus
-                    libero augue, pretium a quam nec, euismod facilisis sem. Vestibulum euismod condimentum est, et blandit
-                    arcu auctor&nbsp;ut.
+                    Use this tool to look up clinical trials that are&nbsp;recruiting.
                 </p>
             </div>
         </div>

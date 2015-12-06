@@ -106,6 +106,16 @@ class SiteController extends Controller
         $connection->open();
         $command = $connection->createCommand('SELECT * FROM drugs');
         $drugs = $command->queryAll();
-        return $this->render('drug_lookup', ['drugs'=>$drugs]);
+        $command = $connection->createCommand('SELECT * FROM brands');
+        $brands = $command->queryAll();
+        $command = $connection->createCommand('SELECT * FROM drug_interactions');
+        $interactions = $command->queryAll();
+        $command = $connection->createCommand('SELECT * FROM severities');
+        $severities = $command->queryAll();
+        return $this->render('drug_lookup', ['drugs'=>$drugs, 'brands'=>$brands, 'interactions' =>$interactions, 'severities'=>$severities]);
+    }
+    public function actionAbout_trials ()
+    {
+        return $this->render('about_trials');
     }
 }
