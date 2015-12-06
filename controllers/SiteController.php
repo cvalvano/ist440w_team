@@ -118,4 +118,14 @@ class SiteController extends Controller
     {
         return $this->render('about_trials');
     }
+    public function actionTrial_lookup ()
+    {
+        $connection = new \yii\db\Connection([
+            'dsn' => 'sqlite:..\pharmaceuticals.sqlite'
+        ]);
+        $connection->open();
+        $command = $connection->createCommand('SELECT * FROM clinical_trials');
+        $trials = $command->queryAll();
+        return $this->render('trial_lookup',['trials'=>$trials]);
+    }
 }

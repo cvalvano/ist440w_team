@@ -1,3 +1,9 @@
+<?php
+
+/* @var $this yii\web\View */
+
+$this->title = 'Pharmaceuticals Portal';
+?>
 <h1 class="center">Drug Lookup</h1>
 <div id="main" class="section group">
     <div id="search_box" class="col span_2_of_12 matchheight">
