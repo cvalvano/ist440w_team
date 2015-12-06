@@ -23,7 +23,7 @@ AppAsset::register($this);
     <link rel="stylesheet" type="text/css" href="../web/css/col.css">
     <link rel="stylesheet" type="text/css" href="../web/css/12cols.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="../web/jquery.matchHeight-min.js"></script>
+    <script src="../web/script.js"></script>
 </head>
 <body>
 <?php $this->beginBody() ?>

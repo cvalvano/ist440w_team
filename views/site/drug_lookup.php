@@ -1,3 +1,4 @@
+<h1 class="center">Drug Lookup</h1>
 <div id="main" class="section group">
     <div id="search_box" class="col span_2_of_12 matchheight">
         <label for="search">Drug Search</label>
@@ -30,7 +31,8 @@
 </style>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.matchheight').matchHeight();
+        $.getQuery('../web/jquery.matchHeight-min.js',function(){$('.matchheight').matchHeight();});
     });
+
 </script>
 <?=print_r($drugs) ?>
