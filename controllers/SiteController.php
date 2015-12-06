@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use yii\debug\models\search\Db;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -95,5 +96,16 @@ class SiteController extends Controller
     public function actionPortal ()
     {
         return $this->render('portal');
+    }
+
+    public function actionDrug_lookup ()
+    {
+        $connection = new \yii\db\Connection([
+            'dsn' => 'sqlite:..\pharmaceuticals.sqlite'
+        ]);
+        $connection->open();
+        $command = $connection->createCommand('SELECT * FROM drugs');
+        $drugs = $command->queryAll();
+        return $this->render('drug_lookup', ['drugs'=>$drugs]);
     }
 }
