@@ -32,6 +32,10 @@ $clinical_trials = $trials;
             </p>
         </div>
         <?php endforeach;?>
+        <div>
+            To view more information about clinical trials, please visit
+            <a target="_blank" href="//clinicaltrials.gov">Clinicaltrials.gov</a>.
+        </div>
     </div>
 </div>
 <style>
