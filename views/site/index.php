@@ -24,11 +24,13 @@ $this->title = 'Pharmaceuticals Portal';
             </div>
             <div class="center">
                 <h2>About This Website</h2>
-                <p>
+                <p class="orange">
                     Team QuestionMark's Pharmaceutical Information Web Portal. 
-<br /><br />
-The purpose of the Pharmaceutical Information Web Portal (PIWP) is to help connect Doctors and Patients with critical information regarding drug interactions and current pharmaceutical drug trials.
-<br /><br /> Team Members: <br />    Craig Valvano <br />   Luke Elliott <br />  Corey Schreffler <br />  Brandt LaBrasca               
+                </p>
+                <p>
+                    The purpose of the Pharmaceutical Information Web Portal (PIWP) is to help connect Doctors and Patients with critical information regarding drug interactions and current pharmaceutical drug trials.
+                </p>
+                <span class="orange">Team Members:</span> <br> Craig Valvano <br> Luke Elliott <br> Corey Schreffler <br>  Brandt LaBrasca
                 </p>
             </div>
         </div>

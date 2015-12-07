@@ -128,4 +128,28 @@ class SiteController extends Controller
         $trials = $command->queryAll();
         return $this->render('trial_lookup',['trials'=>$trials]);
     }
+    public function actionPrescriptions ()
+    {
+        $connection = new \yii\db\Connection([
+            'dsn' => 'sqlite:..\pharmaceuticals.sqlite'
+        ]);
+        $connection->open();
+        $sql = <<<SQLITE
+select U.user_drug_id, U.user_id, D.drug_id, D.drug_name, P.prescription_days, P.prescription_times
+from user_drugs U
+left join drugs D on U.drug_id = D.drug_id
+left join prescriptions P on U.user_drug_id = P.user_drug_id
+where U.user_id = 1
+SQLITE;
+;
+        $command = $connection->createCommand($sql);
+        $prescriptions = $command->queryAll();
+        $command = $connection->createCommand('SELECT * FROM drug_interactions');
+        $interactions = $command->queryAll();
+        $command = $connection->createCommand('SELECT * FROM severities');
+        $severities = $command->queryAll();
+        $command = $connection->createCommand('SELECT * FROM drugs');
+        $drugs = $command->queryAll();
+        return $this->render('prescriptions',['prescriptions'=>$prescriptions,'interactions'=>$interactions, 'severities'=>$severities, 'drugs'=>$drugs]);
+    }
 }

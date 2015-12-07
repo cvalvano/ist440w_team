@@ -80,10 +80,18 @@ $this->title = 'Pharmaceuticals Portal';
                 drug = this;
             }
         });
-        var interaction_text = '';
+        var interaction_text = ''
+            , drug_group = []
+            , drug_list;
         $.each(interactions,function(){
             if (null !=this['drug_ids'].match(id)) {
-                interaction_text += '<span class="orange">'+severities[this['interaction_severity']-1]['severity_description']+'</span> - '+ this['interaction_description']+'<br><br>';
+                drug_list = this['drug_ids'].split(',');
+                drug_group = [];
+                $.each(drug_list,function(){
+                    drug_group.push(drugs[this-1]['drug_name']);
+                });
+                var drug_text = drug_group.join();
+                interaction_text += '<span class="orange">'+severities[this['interaction_severity']-1]['severity_description']+'</span> ('+drug_text+') - '+ this['interaction_description']+'<br><br>';
             }
             $('#interactions').children('p').html(interaction_text);
         });
